@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quentin Watt 13 Arrays, 14 more arrays</title>
+<script type="text/javascript">
+	var cars = new Array("ferari","porsche","jaguar","lamborghini","mcalaren");
+	document.write(cars);  //writes ferari,porsche,jaguar,lamborghini,mcalaren
+	document.write("<br>");
+	document.write(cars[0]);  //writes ferari
+	document.write("<br>");
+	document.write(cars[2]);  //writes jaguar
+	document.write("<br>");
+
+	var cars2 = new Array(5);
+	cars2[0] = "ferari";
+	cars2[1] = "porsche";
+	cars2[2] = "mclaren";
+	cars2[3] = "mercedez";
+	cars2[4] = "bughatti";
+	document.write(cars2);  //writes ferari,porsche,mclaren,mercedez,bughatti
+	document.write("<br>");
+	document.write(cars2[2]);  //writes mclaren
+	document.write("<br>");
+
+	var cars3 = new Array();  //empty array.  Unknown element count.  Add any count of elements.
+	cars3[0] = "ferari";
+	cars3[1] = "porsche";
+	cars3[2] = "mclaren";
+	cars3[3] = "mercedez";
+	cars3[4] = "bughatti";
+	cars3[5] = "bmw";
+	document.write(cars3.length);  //writes 6
+
+</script>
+</head>
+<body>
+<p>An array is a variable we can use to store a group of data.  A collection of variables.  Store a list or a group of data in one variable.  Each value in an array is called an element.  Each element has an index number identifying the position.  Index numbers start at zero.</p>
+</body>
+</html>

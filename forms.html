@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quentin Watt 27 Forms, 28 form value explained, 29 submitting forms, 30 form validation text boxes, 31 radio buttons, 32 radio buttons part 2, 33 checkboxes</title>
+</head>
+<body>
+<p id="welcome"></p>
+<form>
+What is your name:<input type="text" id="name">
+<br>
+<input type="button" value="done" onclick="write_name();" name="">
+</form>
+<br>
+
+<!-- <form action="another_page.php" method="get"> -->  <!-- send information using get method.  Gets added on to the url after the ? -->
+<form action="submission.html" method="post" onsubmit="return check_info();">  <!-- send information using post method.  sends information to the server separately to the webpage.  Doesn't get added on to the url.  More secure.  When user clicks button, check_info function is run.  -->
+username:<input type="text" name="username" id="username">
+password:<input type="password" name="password" id="password">
+<input type="submit" value="login">
+</form>
+<br>
+
+<form action="submission.html" method="get" onsubmit="return is_checked();">
+<p>Do you want to auto renew your membership</p>
+Yes<input type="radio" name="auto_renew" value="yes" id="auto_renew_yes">
+<br>
+No<input type="radio" name="auto_renew" value="no" id="auto_renew_no">
+<br>
+<input type="submit" value="submit">
+</form>
+
+<form action="submission.html" method="get" onsubmit="return is_checkedcheckbox();">
+<p>Please select some categories that you are interested in?</p>
+sports <input type="checkbox" name="interests" value="sports" id="sports">
+<br>
+electronics <input type="checkbox" name="interests" value="electronics" id="electronics">
+<br>
+tools <input type="checkbox" name="interests" value="tools" id="tools">
+<br>
+<input type="submit" value="submit">
+</form>
+<script type="text/javascript" src="forms.js"></script>
+</body>
+</html>
